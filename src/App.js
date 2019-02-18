@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Workouts from './components/Workouts'
 import Header from './components/layout/Header'
 import AddWorkout from './components/AddWorkout'
+import uuid from 'uuid';
 
 
 import './App.css';
@@ -10,19 +11,19 @@ class App extends Component {
     state = {
         workouts: [
             {
-                id: 1,
+                id: uuid.v4(),
                 location: 'Waterford',
                 type: 'walking',
                 length: '3 miles'
             },
                {
-                id: 2,
+                id: uuid.v4(),
                 location: 'Wexford',
                 type: 'walking',
                 length: '3 miles'
             },
                {
-                id: 3,
+                id: uuid.v4(),
                 location: 'Wicklow',
                 type: 'walking',
                 length: '3 miles'
@@ -35,8 +36,19 @@ class App extends Component {
     }
     
     addWorkout = (location, type, length) =>{
-        console.log(location)
+        const newWorkout = {
+            id: uuid.v4(),
+            location,
+            type,
+            length,
+        }
+        console.log(newWorkout);
+        this.setState({workouts: [...this.state.workouts, newWorkout] });
     }
+    
+    
+    
+    
     
   render() {
       console.log(this.state.workouts)
