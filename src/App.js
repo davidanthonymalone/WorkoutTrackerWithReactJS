@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import {BrowserRouter as Router, Route } from 'react-router-dom';
 import Workouts from './components/Workouts'
 import Header from './components/layout/Header'
+import Footer from './components/layout/Footer'
 import About from './components/pages/About'
 import AddWorkout from './components/AddWorkout'
 import uuid from 'uuid';
@@ -58,6 +59,7 @@ class App extends Component {
         <div className="App">
             <div classNAme="container">
             <Header />
+        
             <Route exact path="/" render={ props =>(
                 <React.Fragment>
             <AddWorkout addWorkout={this.addWorkout} />   
@@ -67,10 +69,12 @@ class App extends Component {
     
             )} />
             <Route path="/about" component={About}/>
-           
+            <Footer />
             </div>
           </div>
+            
         </Router>
+           
     );
   }
 }

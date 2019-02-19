@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-
+import './AddWorkout.css';
 export class AddWorkout extends Component {
     state = {
         location: '',
@@ -17,6 +17,7 @@ onChange = (e) => this.setState({[e.target.name]: e.target.value});
 
     render(){
         return(
+            <div className="form">
          <form onSubmit={this.onSubmit} style={{display: 'flex' }}>
             <input 
             type="text"
@@ -49,7 +50,8 @@ onChange = (e) => this.setState({[e.target.name]: e.target.value});
             className="btn"
             />
             </form>
-              )
+            </div>  )
+        
     }    
 }
 

@@ -15,6 +15,9 @@ a{
 
 .container{
     padding: 0 1rem;
+  
+    border-bottom-width: 1px;
+    border-color: #fff;
 }
 
 .btn{
