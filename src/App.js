@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import {BrowserRouter as Router, Route } from 'react-router-dom';
-import Workouts from './components/Workouts'
+import Workouts from './components/workouts/Workouts'
 import Header from './components/layout/Header'
 import Footer from './components/layout/Footer'
 import About from './components/pages/About'
-import AddWorkout from './components/AddWorkout'
+import AddWorkout from './components/addWorkout/AddWorkout'
 import uuid from 'uuid';
 
 

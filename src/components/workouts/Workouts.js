@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import WorkoutExercise from './WorkoutExercise';
+import WorkoutExercise from '../workoutExercise/WorkoutExercise';
 import PropTypes from 'prop-types';
 
 
