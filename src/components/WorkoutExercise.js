@@ -10,9 +10,9 @@ export class WorkoutExercise extends Component {
         return(
         <div className="intro">
             <h2>Exercise</h2>
-           <p>{this.props.workout.location}</p>
-            <p>{this.props.workout.type}</p>
-            <p>{this.props.workout.length}</p>
+           <h3>{this.props.workout.location}</h3>
+           <h3>{this.props.workout.type}</h3>
+            <h3>{this.props.workout.length}</h3>
              <button className="button" onClick={this.props.delWorkout.bind(this,id)}>x</button>
         
         </div>

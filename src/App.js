@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
+import {BrowserRouter as Router, Route } from 'react-router-dom';
 import Workouts from './components/Workouts'
 import Header from './components/layout/Header'
+import About from './components/pages/About'
 import AddWorkout from './components/AddWorkout'
 import uuid from 'uuid';
 
@@ -51,17 +53,24 @@ class App extends Component {
     
     
   render() {
-      console.log(this.state.workouts)
     return (
-      <div className="App">
-        <div classNAme="container">
-        <Header />
-        <AddWorkout addWorkout={this.addWorkout} />   
-        
-        <Workouts workouts={this.state.workouts}
-        delWorkout={this.delWorkout}/>
-        </div>
-      </div>
+            <Router>
+        <div className="App">
+            <div classNAme="container">
+            <Header />
+            <Route exact path="/" render={ props =>(
+                <React.Fragment>
+            <AddWorkout addWorkout={this.addWorkout} />   
+            <Workouts workouts={this.state.workouts}
+            delWorkout={this.delWorkout}/>
+                </React.Fragment>
+    
+            )} />
+            <Route path="/about" component={About}/>
+           
+            </div>
+          </div>
+        </Router>
     );
   }
 }
