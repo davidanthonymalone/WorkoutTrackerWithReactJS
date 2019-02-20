@@ -6,6 +6,8 @@ import Footer from './components/layout/Footer'
 import About from './components/pages/About'
 import AddWorkout from './components/addWorkout/AddWorkout'
 import uuid from 'uuid';
+import '../node_modules/bootstrap/dist/css/bootstrap.css';
+
 
 
 import './App.css';
@@ -56,7 +58,7 @@ class App extends Component {
   render() {
     return (
             <Router>
-        <div className="App">
+        <div className="jumbotron">
             <div classNAme="container">
             <Header />
         
