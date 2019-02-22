@@ -8,7 +8,7 @@ import workoutList from '../components/Data/Data.js';
 import WorkoutExercise from '../components/workoutExercise/WorkoutExercise.js';
 import AddWorkout from '../components/addWorkout/AddWorkout.js';
 import { Button, Welcome } from '@storybook/react/demo';
-import Exercises from '../Data/Data.js';
+import Exercises from '../Data/db.json';
 import uuid from 'uuid';
 const workoutEx = {
   id: 1,
