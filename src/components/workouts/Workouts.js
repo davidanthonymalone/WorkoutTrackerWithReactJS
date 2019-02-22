@@ -14,7 +14,7 @@ class Workouts extends Component {
 }
 
 Workouts.propTypes = {
-    workouts: PropTypes.array.isRequired
+    workouts: PropTypes.array
     
     
 }

@@ -6,7 +6,7 @@ export class WorkoutExercise extends Component {
     
 
     render(){
-        const {id, location} = this.props.workout;
+        const {id,location,type,length} = this.props.workout;
         return(
         <div className="intro">
             <h2>Exercise</h2>
@@ -24,11 +24,7 @@ export class WorkoutExercise extends Component {
     
 }
 
-WorkoutExercise.propTypes = {
-    workouts: PropTypes.array.isRequired
-    
-    
-}
+
 
 
 

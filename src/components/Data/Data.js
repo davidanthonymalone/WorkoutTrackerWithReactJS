@@ -6,21 +6,21 @@ import { linkTo } from '@storybook/addon-links';
 import { Button, Welcome } from '@storybook/react/demo';
 import uuid from 'uuid';
 
-let AllExercises = [ 
+let AllPhones = [ 
     {
-                id: 1,
+                id: uuid.v4(),
                 location: 'Waterford',
                 type: 'walking',
                 length: '3 miles'
             },
                {
-                id: 2,
+                id: uuid.v4(),
                 location: 'Wexford',
                 type: 'walking',
                 length: '3 miles'
             },
                {
-                id: 3,
+                id: uuid.v4(),
                 location: 'Wicklow',
                 type: 'walking',
                 length: '3 miles'
@@ -28,4 +28,4 @@ let AllExercises = [
    
 ] ; 
 
-export default AllExercises;
+export default AllPhones;
