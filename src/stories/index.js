@@ -5,6 +5,7 @@ import { action } from '@storybook/addon-actions';
 import { linkTo } from '@storybook/addon-links';
 import Workouts from '../components/workouts/Workouts.js';
 import workoutList from '../components/Data/Data.js';
+import Login from '../Login.js'
 import WorkoutExercise from '../components/workoutExercise/WorkoutExercise.js';
 import AddWorkout from '../components/addWorkout/AddWorkout.js';
 import { Button, Welcome } from '@storybook/react/demo';
@@ -27,7 +28,7 @@ const workoutEx = {
             () =>  <AddWorkout /> 
         )
 
-     .add('Workouts', 
-       () =>     <Workouts />
+     .add('Login', 
+       () =>     <Login />
     )     
         
