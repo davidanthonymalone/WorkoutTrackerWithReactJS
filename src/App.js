@@ -6,6 +6,8 @@ import Footer from './components/layout/Footer'
 import axios from 'axios';
 import About from './components/pages/About'
 import AddWorkout from './components/addWorkout/AddWorkout'
+import fire from './config/Fire';
+import Login from './Login';
 import uuid from 'uuid';
 import '../node_modules/bootstrap/dist/css/bootstrap.css';
 
@@ -14,12 +16,24 @@ import '../node_modules/bootstrap/dist/css/bootstrap.css';
 import './App.css';
 
 class App extends Component {
+    
+     constructor() {
+    super();
+    this.state = ({
+      user: null,
+    });
+    this.authListener = this.authListener.bind(this);
+          this.logout = this.logout.bind(this);
+  }
     state = {
         workouts: [ ]
     }
     
-    
+      logout() {
+        fire.auth().signOut();
+    }
     componentDidMount(){
+        this.authListener();
         axios.get('https://raw.githubusercontent.com/davidanthonymalone/jsonserver/master/db.json')
         .then(res => this.setState({workouts: res.data }));
     }
@@ -40,13 +54,26 @@ class App extends Component {
     }
     
     
-    
+     authListener() {
+    fire.auth().onAuthStateChanged((user) => {
+      console.log(user);
+      if (user) {
+        this.setState({ user });
+        localStorage.setItem('user', user.uid);
+      } else {
+        this.setState({ user: null });
+        localStorage.removeItem('user');
+      }
+    });
+  }
     
     
   render() {
     return (
-            <Router>
-        <div className="jumbotron">
+         <div className="jumbotron">
+          <button className="btn" onClick={this.logout}>Logout</button>
+         <div>{this.state.user ?  (   <Router>
+       
             <div className="container">
             <Header />
         
@@ -61,9 +88,11 @@ class App extends Component {
             <Route path="/about" component={About}/>
             <Footer />
             </div>
-          </div>
+         
             
-        </Router>
+        </Router>) : (<Login />)}</div>
+         
+             </div>
            
     );
   }
