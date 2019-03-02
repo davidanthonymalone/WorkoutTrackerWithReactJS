@@ -5,6 +5,7 @@ import Header from './components/layout/Header'
 import Footer from './components/layout/Footer'
 import axios from 'axios';
 import About from './components/pages/About'
+import Contact from './components/pages/Contact'
 import AddWorkout from './components/addWorkout/AddWorkout'
 import fire from './config/Fire';
 import Login from './Login';
@@ -86,6 +87,7 @@ class App extends Component {
     
             )} />
             <Route path="/about" component={About}/>
+             <Route path="/contact" component={Contact}/>
             <Footer />
             </div>
          

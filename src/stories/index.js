@@ -23,7 +23,7 @@ const workoutEx = {
 
  
 
- storiesOf('Phone Catalogue', module)
+ storiesOf('Workout Tracker', module)
         .add('Add Workouts', 
             () =>  <AddWorkout /> 
         )
