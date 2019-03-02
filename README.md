@@ -1,4 +1,4 @@
-# Project Title
+# Workout Tracker
 
 The purpose of this application is for users to login to the application with their Google account and keep track of their exercises.  This is an exercise tracker.
 
