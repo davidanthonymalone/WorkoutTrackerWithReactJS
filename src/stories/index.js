@@ -8,6 +8,9 @@ import workoutList from '../components/Data/Data.js';
 import Login from '../Login.js'
 import WorkoutExercise from '../components/workoutExercise/WorkoutExercise.js';
 import AddWorkout from '../components/addWorkout/AddWorkout.js';
+import About from '../components/pages/About.js';
+import Contact from '../components/pages/Contact.js';
+
 import { Button, Welcome } from '@storybook/react/demo';
 import Exercises from '../Data/db.json';
 import uuid from 'uuid';
@@ -30,5 +33,13 @@ const workoutEx = {
 
      .add('Login', 
        () =>     <Login />
-    )     
+    )  
+ 
+  .add('About', 
+       () =>     <About />
+    )  
+       
+     .add('Contact', 
+       () =>     <Contact />
+    )  
         

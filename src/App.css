@@ -15,15 +15,45 @@ a{
 
 .container{
     padding: 0 1rem;
-  
+  width: 100%;
     border-bottom-width: 1px;
     border-color: #fff;
 }
 
+.btn {border-radius: 2px;  width: 25%;}
+
+.btn:hover {
+  background-color: #ff0000; 
+  color: white;
+     text-decoration: underline;
+   
+}
+
 .btn{
     display: inline-block;
+    width: 33%;
     background: #4CAF50;
-    padding: 3px 10px;
+    padding: 5px 5px 5px 5px;
     cursor: pointer;
     border: 2px;
 }
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+
+
+
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.main {
+   /* Same as the width of the sidenav */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 2px 2px 2px 2px;
+  width: 100%;
+}
+

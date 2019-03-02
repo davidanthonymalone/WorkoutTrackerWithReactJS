@@ -1,12 +1,12 @@
 .intro {
   width: 800px;
-  border: 25px solid green;
-  padding: 25px;
+  border: 10px solid green;
+  padding: 10px;
   margin: 25px;
 }
 
 .button {
-  background-color: #4CAF50;
+  background-color: #ff0000;
   border: none;
   color: white;
   padding: 15px 32px;

@@ -9,6 +9,7 @@ import Contact from './components/pages/Contact'
 import AddWorkout from './components/addWorkout/AddWorkout'
 import fire from './config/Fire';
 import Login from './Login';
+import {Link} from 'react-router-dom';
 import uuid from 'uuid';
 import '../node_modules/bootstrap/dist/css/bootstrap.css';
 
@@ -71,13 +72,16 @@ class App extends Component {
     
   render() {
     return (
-         <div className="jumbotron">
-          <button className="btn" onClick={this.logout}>Logout</button>
+        <div>
+       
+         <div className="main">
+         
          <div>{this.state.user ?  (   <Router>
        
             <div className="container">
+         
             <Header />
-        
+        <button className="btn" onClick={this.logout}>Logout</button>
             <Route exact path="/" render={ props =>(
                 <React.Fragment>
             <AddWorkout addWorkout={this.addWorkout} />   
@@ -95,7 +99,7 @@ class App extends Component {
         </Router>) : (<Login />)}</div>
          
              </div>
-           
+           </div>
     );
   }
 }

@@ -9,9 +9,11 @@ function Header(){
   
   <div class="header-center">
      <h1 align="center">Workout Tracker</h1>
-        <Link to="/">Home</Link> <Link to="/about">About</Link>
-         <Link to="/"></Link> <Link to="/contact">Contact</Link>
-  </div>
+         </div>
+        <Link class="btn" to="/">Home</Link> 
+        <Link class="btn" to="/about">About</Link>
+         <Link class="btn" to="/contact">Contact</Link>
+ 
 </div>
  
  
