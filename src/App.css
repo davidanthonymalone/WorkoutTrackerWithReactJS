@@ -26,12 +26,16 @@ a{
   background-color: #ff0000; 
   color: white;
      text-decoration: underline;
+    border-style: solid;
+  border-color: coral;
    
 }
 
 .btn{
     display: inline-block;
     width: 33%;
+    border-style: solid;
+      border-color: coral;
     background: #4CAF50;
     padding: 5px 5px 5px 5px;
     cursor: pointer;

@@ -30,7 +30,7 @@ onChange = (e) => this.setState({[e.target.name]: e.target.value});
              <input 
             type="text"
             name="type"
-            placeholder="Add type of activity"
+            placeholder="Add type of exercise"
             value={this.state.type}
             onChange={this.onChange}
             />
@@ -38,7 +38,7 @@ onChange = (e) => this.setState({[e.target.name]: e.target.value});
              <input 
             type="text"
             name="length"
-            placeholder="Add length of Activity"
+            placeholder="Add length of exercise in miles"
             value={this.state.length}
             onChange={this.onChange}
             />

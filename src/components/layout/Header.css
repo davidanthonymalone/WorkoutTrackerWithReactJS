@@ -2,6 +2,10 @@
 .header {
   overflow: hidden;
   background-color: #4CAF50;
-    height: 50px;
+    height: 95px;
   padding: 5px 5px;
 }
+
+.btn{
+border-style: solid;
+  border-color: coral;}
