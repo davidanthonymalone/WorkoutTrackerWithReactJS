@@ -15,29 +15,20 @@ In the making of this application I used Firebases API for google sign in and He
 
 ### Installing
 
-* How/where to download your program
-* Any modifications needed to be made to files/folders
+N/A
 
 ### Executing program
 
-* How to run the program
-* Step-by-step bullets
-```
-code blocks for commands
-```
+Run npm start
 
 ## Help
 
-Any advise for common problems or issues.
-```
-command to run if program contains helper info
-```
+N/A
 
 ## Authors
 
 @David Malone
 @Student Number 20060617
 
-## Version History
 
 
