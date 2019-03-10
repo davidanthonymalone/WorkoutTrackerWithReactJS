@@ -1,6 +1,9 @@
 # Workout Tracker
 
-The purpose of this application is for users to login to the application with their Google account and keep track of their exercises.  This is an exercise tracker.
+The purpose of this application is for users to login to the application with their Google account and keep track of their exercises.  This is an exercise tracker. The data is not persisted but there is Create, Retrive and Delete functionality data from the view but when you reload the page everything is lost.
+
+This application has 4 pages and 3 routes. There is one data model within this application and that is Workouts.  
+
 
 ## Description
 
@@ -32,7 +35,7 @@ N/A
 ## Authors
 
 @David Malone
-@Student Number 20060617
-
+@Student Number 20050617
+davidanthonymalone@gmail.com if you have any questions.
 
 

@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import fire from './config/Fire';
-/* I learned how to do the firebase react login from this tutorial
-https://www.robinwieruch.de/complete-firebase-authentication-react-tutorial
-*/
+
+
 
 class Login extends Component {
   constructor(props) {

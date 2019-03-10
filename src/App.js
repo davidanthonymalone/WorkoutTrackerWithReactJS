@@ -61,10 +61,6 @@ class App extends Component {
   });
  }
 
- /* I learned how to do the firebase react login from this tutorial
-https://www.robinwieruch.de/complete-firebase-authentication-react-tutorial
-*/
-
  authListener() {
   fire.auth().onAuthStateChanged((user) => {
    console.log(user);
@@ -88,26 +84,25 @@ https://www.robinwieruch.de/complete-firebase-authentication-react-tutorial
         
 <div>
 	<div className="main">
-		<div>{this.state.user ?  (   
-			<Router>
-				<div className="container">
-					<Header />
-					<button className="btn" onClick={this.logout}>Logout</button>
-					<Route exact path="/" render={ props =>(
-                
-						<React.Fragment>
-							<AddWorkout addWorkout={this.addWorkout} />
-							<Workouts workouts={this.state.workouts}
-            delWorkout={this.delWorkout}/>
-						</React.Fragment>
-    
-            )} />
-						<Route path="/about" component={About}/>
-						<Route path="/contact" component={Contact}/>
-						<Footer />
-					</div>
-				</Router>) : (
-				<Login />)}
+		<div>{this.state.user ?  (
+        <Router>
+                    <div className="container">
+                            <Header />
+                            <button className="btn" onClick={this.logout}>Logout</button>
+                            <Route exact path="/" render={ props =>(
+
+                            <React.Fragment>
+                                <AddWorkout addWorkout={this.addWorkout} />
+                                <Workouts workouts={this.state.workouts}
+                                delWorkout={this.delWorkout}/>
+                            </React.Fragment>
+
+                                                                        )} />
+                            <Route path="/about" component={About}/>
+                            <Route path="/contact" component={Contact}/>
+                            <Footer />
+                        </div>
+        </Router>) : (<Login />)}
 			</div>
 		</div>
 	</div>
