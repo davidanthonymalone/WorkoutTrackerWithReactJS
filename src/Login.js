@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import fire from './config/Fire';
-
+/* I learned how to do the firebase react login from this tutorial
+https://www.robinwieruch.de/complete-firebase-authentication-react-tutorial
+*/
 
 class Login extends Component {
   constructor(props) {
@@ -37,23 +39,24 @@ class Login extends Component {
   }
   render() {
     return (
-       <div className="col-md-6">
-       <form>
-      <div class="form-group">
-       <label for="exampleInputEmail1">Email address</label>
-       <input value={this.state.email} onChange={this.handleChange} type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" />
-       <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-      </div>
-       <div class="form-group">
-      <label for="exampleInputPassword1">Password</label>
-      <input value={this.state.password} onChange={this.handleChange} type="password" name="password" class="form-control" id="exampleInputPassword1" placeholder="Password" />
-      </div>
-      <button type="submit" onClick={this.login} class="btn btn-primary">Login</button>
-      <button onClick={this.signup}  style={{marginLeft: '25px'}} className="btn btn-success">Signup</button>
- </form>
- <p>To sign up type in your password and email then press sign up! which will create an account for you and log you in.</p>
-<p>A ready made account if for grading purposes is Username: joe@gmail.com | Password: password</p>
- </div>
+       
+<div className="col-md-6">
+	<form>
+		<div class="form-group">
+			<label for="exampleInputEmail1">Email address</label>
+			<input value={this.state.email} onChange={this.handleChange} type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" />
+			<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+		</div>
+		<div class="form-group">
+			<label for="exampleInputPassword1">Password</label>
+			<input value={this.state.password} onChange={this.handleChange} type="password" name="password" class="form-control" id="exampleInputPassword1" placeholder="Password" />
+		</div>
+		<button type="submit" onClick={this.login} class="btn btn-primary">Login</button>
+		<button onClick={this.signup}  style={{marginLeft: '25px'}} className="btn btn-success">Signup</button>
+	</form>
+	<p>To sign up type in your password and email then press sign up! which will create an account for you and log you in.</p>
+	<p>A ready made account if for grading purposes is Username: joe@gmail.com | Password: password</p>
+</div>
     );
   }
 }
