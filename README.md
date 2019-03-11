@@ -36,6 +36,8 @@ https://workouttracker0203.herokuapp.com/
 In the making of this application I used Firebases API for google sign in and Heroku for cloud deployment.
 
 ## UI Design.
+<p>This is the signup and login which is created using Firebase Authentication.  The rest of the pagese can not be viewed unless you login first.  To sign up simply enter an email address and password and press the sign up button and then login.</p>
+
 ![alt text](screenshots/login.png " This is the signup and login which is created using Firebase Authentication.  The rest of the pagese can not be viewed unless you login first.  To sign up simply enter an email address and password and press the sign up button and then login.")
 
 ![alt text](screenshots/home.png " This page displays all the workouts that the user has from a placeholder json file.  The user can add a new workout and delete a workout.  There is no persistence and all the data is only session based, once the page is reloaded so is the data.")
