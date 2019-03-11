@@ -5,6 +5,7 @@ export default function Contact(){
         
 <div>
 	<React.Fragment>
+        <h1>Contact </h1>
 		<table>
 			<tr>
 				<td>Phone Number:</td>

@@ -36,7 +36,13 @@ https://workouttracker0203.herokuapp.com/
 In the making of this application I used Firebases API for google sign in and Heroku for cloud deployment.
 
 ## UI Design.
-![alt text](screenshots/storybook.png "Description goes here")
+![alt text](screenshots/login.png" This is the signup and login which is created using Firebase Authentication.  The rest of the pagese can not be viewed unless you login first.  To sign up simply enter an email address and password and press the sign up button and then login.")
+
+![alt text](screenshots/home.png" This page displays all the workouts that the user has from a placeholder json file.  The user can add a new workout and delete a workout.  There is no persistence and all the data is only session based, once the page is reloaded so is the data.")
+
+![alt text](screenshots/contact.png" This is where you can contact the app owner about any potential problems")
+
+![alt text](screenshots/about.png" This is the about me page for the app owners.")
 ## Routing
 /Login
 /Home
@@ -49,7 +55,7 @@ All routes require you to be logged in first.
 N/A
 
 ## App Component Design.
-[model]: ./storybook.png
+![alt text](screenshots/storybook.png "Description goes here")
 ### Executing program
 
 Run npm start
@@ -58,6 +64,8 @@ Run npm start
 Firebase authentication and login && the application is deployed to the cloud using heroku:
 https://workouttracker0203.herokuapp.com/
 
+## Independent learning.
 
+The indepenent learning would be the Firebase intergration and the Heroku deployment.  Also there is another few small things like uuid, axios etc.
 
 
