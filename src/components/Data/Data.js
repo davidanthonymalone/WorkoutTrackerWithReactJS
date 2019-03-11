@@ -6,7 +6,7 @@ import { linkTo } from '@storybook/addon-links';
 import { Button, Welcome } from '@storybook/react/demo';
 import uuid from 'uuid';
 
-let AllPhones = [ 
+let AllWorkouts = [ 
     {
                 id: uuid.v4(),
                 location: 'Waterford',
@@ -28,4 +28,4 @@ let AllPhones = [
    
 ] ; 
 
-export default AllPhones;
+export default AllWorkouts;
