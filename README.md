@@ -36,7 +36,7 @@ https://workouttracker0203.herokuapp.com/
 In the making of this application I used Firebases API for google sign in and Heroku for cloud deployment.
 
 ## UI Design.
-![][storybook.png]
+![alt text](screenshots/storybook.png "Description goes here")
 ## Routing
 /Login
 /Home
