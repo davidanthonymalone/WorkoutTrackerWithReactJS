@@ -36,23 +36,23 @@ https://workouttracker0203.herokuapp.com/
 In the making of this application I used Firebases API for google sign in and Heroku for cloud deployment.
 
 ## UI Design.
-<h2>Login and Signup Page</h2>
+<h3>Login and Signup Page</h3>
 <p>This is the signup and login which is created using Firebase Authentication.  The rest of the pagese can not be viewed unless you login first.  To sign up simply enter an email address and password and press the sign up button and then login.</p>
 
 ![alt text](screenshots/login.png " This is the signup and login which is created using Firebase Authentication.  The rest of the pagese can not be viewed unless you login first.  To sign up simply enter an email address and password and press the sign up button and then login.")
 
 
-<h2>Home Page</h2>
+<h3>Home Page</h3>
 <p>This page displays all the workouts that the user has from a placeholder json file.  The user can add a new workout and delete a workout.  There is no persistence and all the data is only session based, once the page is reloaded so is the data.</p>
 
 ![alt text](screenshots/home.png " This page displays all the workouts that the user has from a placeholder json file.  The user can add a new workout and delete a workout.  There is no persistence and all the data is only session based, once the page is reloaded so is the data.")
 
-<h2>Contact Page</h2>
+<h3>Contact Page</h3>
 <p>This is where you can contact the app owner about any potential problems</p>
 
 ![alt text](screenshots/contact.png " This is where you can contact the app owner about any potential problems")
 
-<h2>About Page</h2>
+<h3>About Page</h3>
 <p>This is the about me page for the app owners.</p>
 
 ![alt text](screenshots/about.png " This is the about me page for the app owners.")
@@ -68,6 +68,7 @@ All routes require you to be logged in first.
 N/A
 
 ## App Component Design.
+<p>Stories:</p>
 ![alt text](screenshots/storybook.png "Description goes here")
 ### Executing program
 
