@@ -43,7 +43,7 @@ export class AddWorkout extends Component {
 		<input 
             type="text"
             name="length"
-            placeholder="Add length in miles"
+            placeholder="Add length in `km`"
             value={this.state.length}
             onChange={this.onChange}
             />
