@@ -9,9 +9,9 @@ import Contact from './components/pages/Contact'
 import AddWorkout from './components/addWorkout/AddWorkout'
 import fire from './config/Fire';
 import Login from './Login';
-import {Link} from 'react-router-dom';
 import uuid from 'uuid';
 import '../node_modules/bootstrap/dist/css/bootstrap.css';
+import * as api from './api';
 
 
 
@@ -35,10 +35,9 @@ class App extends Component {
   fire.auth().signOut();
  }
  componentDidMount() {
-  this.authListener();
-  axios.get('https://raw.githubusercontent.com/davidanthonymalone/jsonserver/master/db.json')
-   .then(res => this.setState({
-    workouts: res.data
+     this.authListener();
+    api.getAll().then(resp => this.setState({
+    workouts: resp
    }));
  }
 
@@ -93,7 +92,7 @@ class App extends Component {
 
                             <React.Fragment>
                                 <AddWorkout addWorkout={this.addWorkout} />
-                                <Workouts workouts={this.state.workouts}
+                                <Workouts workouts={this.state.workouts} 
                                 delWorkout={this.delWorkout}/>
                             </React.Fragment>
 
