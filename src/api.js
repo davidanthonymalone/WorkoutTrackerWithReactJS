@@ -15,7 +15,7 @@ export const getPost = postId => {
               .then(resp => resp.data);
 };
 
-// export const add = (newTitle, newLink) => {
-//   return axios.post('/api/posts', { title: newTitle, link: newLink })
-//               .then(resp => resp.data);
-// };
+export const add = (newLocation, newType,newLength) => {
+  return axios.post('/api/workouts', { location: newLocation, type: newType, length: newLength })
+              .then(resp => resp.data);
+};

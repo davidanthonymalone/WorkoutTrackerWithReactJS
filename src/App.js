@@ -36,10 +36,15 @@ class App extends Component {
  }
  componentDidMount() {
      this.authListener();
+     
     api.getAll().then(resp => this.setState({
     workouts: resp
    }));
  }
+
+
+
+ 
 
  delWorkout = (id) => {
   this.setState({
@@ -47,18 +52,29 @@ class App extends Component {
   });
  }
 
+
+
+
  addWorkout = (location, type, length) => {
-  const newWorkout = {
-   id: uuid.v4(),
-   location,
-   type,
-   length,
-  }
-  console.log(newWorkout);
-  this.setState({
-   workouts: [...this.state.workouts, newWorkout]
-  });
- }
+  api.add(location,type,length)
+  .then(resp => {
+                const newWorkout = {"location":location,"type":type, "length": length};
+                this.setState({workouts: this.state.workouts.concat([newWorkout])});
+  })
+};
+
+// //  addWorkout = (location, type, length) => {
+// //   const newWorkout = {
+// //    id: uuid.v4(),
+// //    location,
+// //    type,
+// //    length,
+// //   }
+//   console.log(newWorkout);
+//   this.setState({
+//    workouts: [...this.state.workouts, newWorkout]
+//   });
+//  }
 
  authListener() {
   fire.auth().onAuthStateChanged((user) => {
