@@ -55,10 +55,11 @@ class App extends Component {
 
 
 
- addWorkout = (location, type, length) => {
-  api.add(location,type,length)
+ addWorkout = (location,type, length) => {
+     api.add(location,type,length)
   .then(resp => {
-                const newWorkout = {"location":location,"type":type, "length": length};
+              
+                const newWorkout = {"location":location,"type":type, "length":length};
                 this.setState({workouts: this.state.workouts.concat([newWorkout])});
   })
 };
