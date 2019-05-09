@@ -10,7 +10,7 @@ class Workouts extends Component {
    
     return this.props.workouts.map((workout) => (
       
-            <WorkoutExercise key={workout.id} workout={workout} delWorkout={this.props.delWorkout} />
+            <WorkoutExercise key={workout._id} workout={workout} delWorkout={this.props.delWorkout} />
     
     ));
   }

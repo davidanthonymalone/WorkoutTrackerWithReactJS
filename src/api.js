@@ -1,7 +1,7 @@
 import axios from 'axios';
 
-export const updateWorkout = id => {
-  return axios.post(`/api/posts/${id}`)
+export const deleteWorkout = id => {
+  return axios.delete(`/api/workouts/${id}`)
               .then(resp => resp.data);
 };
 

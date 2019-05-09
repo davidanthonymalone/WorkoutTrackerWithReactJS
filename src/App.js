@@ -46,10 +46,11 @@ class App extends Component {
 
  
 
- delWorkout = (id) => {
-  this.setState({
-   workouts: [...this.state.workouts.filter(workout => workout.id !== id)]
-  });
+ delWorkout = (_id) => {
+    api.deleteWorkout(_id); 
+     this.setState({
+   workouts: [...this.state.workouts.filter(workout => workout._id !== _id)]
+  }); 
  }
 
 
